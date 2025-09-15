@@ -1,26 +1,35 @@
+body {
+    background-color: rgb(84,212,84,255);
+}
+
 h1 {
+    font-family: 'Cinzel Decorative';
     text-align: center;
 }
 
 h2 {
+    font-family: 'Cinzel Decorative';
     text-align: center;
 }
 
 /* horizontal nav bar with help from ChatGPT */
 nav ul {
     display: flex;
-    justify-content: center;;
+    justify-content: center;
     list-style-type: none;
     gap: 1rem;
     margin: 0;
 
     /* my additions */
     font-size: 30px;
+    height: 70px;
+    text-align: center;
+    background-color: rgb(41,233,41,255);
 }
 
 .column:first-child {
     flex: 3;
-    border: 2px solid rgb(75 70 74);
+    /* border: 2px solid rgb(75, 70, 74); */
     padding: 20px 10px;
     background-color: rgb(41,233,41,255);
     
@@ -28,29 +37,15 @@ nav ul {
 
 .column:last-child {
     flex: 1;
-    border: 2px solid rgb(75 70 74);
+    /* border: 2px solid rgb(75, 70, 74); */
     padding: 20px;
+    background-color: rgb(41, 233, 41, 255)
 }
 
 .row {
   display: flex;
-  gap: 4%;
+  gap: 1%;
 }
-
-/*
-.image-crop {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 10px;
-    gap: 0;
-}
-
-.image-crop img {
-    width: 50%;
-    margin: 0;
-    display: block;
-}
-*/
 
 /* ChatGPT help with fixing image cropping */
 
@@ -62,7 +57,7 @@ nav ul {
 /* Right-hand column containing the photos */
 .column.photos {
     flex: 2;                 /* narrower than the left column */
-    border: 2px solid rgb(75, 70, 74);
+    /* border: 2px solid rgb(75, 70, 74); */
     padding: 20px;
     box-sizing: border-box;  /* include padding/border in width */
 }
@@ -74,3 +69,12 @@ nav ul {
     margin-bottom: 10px;     /* vertical gap between top and bottom rows */
 }
 
+/* Taken from my Module 2 assignment */
+hr{
+  /* hr styling found on w3schools.com at https://www.w3schools.com/tags/tag_hr.asp */
+  margin-left: 0;
+  margin-right: auto;
+  border: none;
+  height: 10px;
+  background-color: rgb(161, 161, 161);
+}

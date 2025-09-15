@@ -39,3 +39,5 @@ Finalizing proper navigation bar CSS found with help from ChatGPT
 Favourite photos section in index.html written by ChatGPT to fix formatting and cropping
 
 Making a two-column layout found on w3schools.com at https://www.w3schools.com/howto/howto_css_two_columns.asp
+
+<hr> styling found on w3schools.com at https://www.w3schools.com/tags/tag_hr.asp
