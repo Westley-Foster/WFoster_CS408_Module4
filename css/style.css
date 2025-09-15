@@ -1,0 +1,76 @@
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* horizontal nav bar with help from ChatGPT */
+nav ul {
+    display: flex;
+    justify-content: center;;
+    list-style-type: none;
+    gap: 1rem;
+    margin: 0;
+
+    /* my additions */
+    font-size: 30px;
+}
+
+.column:first-child {
+    flex: 3;
+    border: 2px solid rgb(75 70 74);
+    padding: 20px 10px;
+    background-color: rgb(41,233,41,255);
+    
+}
+
+.column:last-child {
+    flex: 1;
+    border: 2px solid rgb(75 70 74);
+    padding: 20px;
+}
+
+.row {
+  display: flex;
+  gap: 4%;
+}
+
+/*
+.image-crop {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    gap: 0;
+}
+
+.image-crop img {
+    width: 50%;
+    margin: 0;
+    display: block;
+}
+*/
+
+/* ChatGPT help with fixing image cropping */
+
+/* Remove bottom margin for the last photo row */
+.image-crop:last-child {
+    margin-bottom: 0;
+}
+
+/* Right-hand column containing the photos */
+.column.photos {
+    flex: 2;                 /* narrower than the left column */
+    border: 2px solid rgb(75, 70, 74);
+    padding: 20px;
+    box-sizing: border-box;  /* include padding/border in width */
+}
+
+/* Each row of photos inside the column */
+.photo-row {
+    display: flex;           /* put images side-by-side */
+    gap: 0;                  /* no horizontal gap so images touch */
+    margin-bottom: 10px;     /* vertical gap between top and bottom rows */
+}
+

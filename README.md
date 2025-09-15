@@ -27,3 +27,15 @@ To run the tests for the project, run the following command:
 ```bash
 npm test
 ```
+
+## References
+
+Used ImageColorPicker to get exact colors as the given example found at https://imagecolorpicker.com/
+
+Creating a horizontal navigation bar found on w3schools.com at https://www.w3schools.com/css/css_navbar_horizontal.asp
+
+Finalizing proper navigation bar CSS found with help from ChatGPT
+
+Favourite photos section in index.html written by ChatGPT to fix formatting and cropping
+
+Making a two-column layout found on w3schools.com at https://www.w3schools.com/howto/howto_css_two_columns.asp
