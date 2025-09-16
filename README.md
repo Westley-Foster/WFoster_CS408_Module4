@@ -42,3 +42,5 @@ Finalizing proper navigation bar CSS written with help from ChatGPT
 Favourite photos section in index.html written by ChatGPT to fix formatting and cropping
 
 Fixed positioning with bird image next to top header with help from ChatGPT
+
+Removal of default text-decoration from nav bar and addition of header text-shadow referenced from classmate Corbin Lilya

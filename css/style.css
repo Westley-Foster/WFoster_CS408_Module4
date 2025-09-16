@@ -6,6 +6,7 @@ h1 {
     font-family: 'Cinzel Decorative';
     font-size: 320%;
     text-align: center;
+    text-shadow: black 4px 1px 10px; /* Referenced from classmate Corbin Lilya */
 
     position: relative; /* Fixed position with ChatGPT */
 }
@@ -46,6 +47,13 @@ nav ul {
     text-align: center;
     padding-top: 17px;
     background-color: rgb(41,233,41,255);
+
+}
+
+/* Code referenced from classmate Corbin Lilya */
+nav a {
+    text-decoration: none;
+    color: black;
 }
 
 .column:first-child {
