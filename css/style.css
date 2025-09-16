@@ -4,32 +4,52 @@ body {
 
 h1 {
     font-family: 'Cinzel Decorative';
+    font-size: 320%;
     text-align: center;
+
+    position: relative; /* Fixed position with ChatGPT */
 }
 
 h2 {
     font-family: 'Cinzel Decorative';
+    font-size: 320%;
     text-align: center;
 }
 
-/* horizontal nav bar with help from ChatGPT */
+p {
+    font-size: 165%;
+}
+
+h1 img {
+    width: 80px;
+    height: 80px;
+    
+    /* Fixed positioning of the bird image with ChatGPT */
+    position: absolute;       /* take it out of the text flow */
+    right: 0;                 /* pin to the right edge of the page */
+    top: 50%;                 /* halfway down the h1 box */
+    transform: translateY(-50%); /* vertically center with the text */
+}
+
+/* Horizontal nav bar with help from ChatGPT */
 nav ul {
     display: flex;
     justify-content: center;
     list-style-type: none;
-    gap: 1rem;
+    gap: 11rem;
     margin: 0;
 
-    /* my additions */
-    font-size: 30px;
+    /* My additions */
+    font-family: 'Roboto Condensed';
+    font-size: 270%;
     height: 70px;
     text-align: center;
+    padding-top: 17px;
     background-color: rgb(41,233,41,255);
 }
 
 .column:first-child {
     flex: 3;
-    /* border: 2px solid rgb(75, 70, 74); */
     padding: 20px 10px;
     background-color: rgb(41,233,41,255);
     
@@ -37,7 +57,6 @@ nav ul {
 
 .column:last-child {
     flex: 1;
-    /* border: 2px solid rgb(75, 70, 74); */
     padding: 20px;
     background-color: rgb(41, 233, 41, 255)
 }
@@ -47,8 +66,17 @@ nav ul {
   gap: 1%;
 }
 
-/* ChatGPT help with fixing image cropping */
+/* Taken from my Module 2 assignment */
+hr {
+  /* <hr> styling found on w3schools.com at https://www.w3schools.com/tags/tag_hr.asp */
+  margin-left: 0;
+  margin-right: auto;
+  border: none;
+  height: 14px;
+  background-color: rgb(161, 161, 161);
+}
 
+/* ChatGPT help with fixing image cropping for Favourite Photos section (all the CSS below) */
 /* Remove bottom margin for the last photo row */
 .image-crop:last-child {
     margin-bottom: 0;
@@ -57,7 +85,6 @@ nav ul {
 /* Right-hand column containing the photos */
 .column.photos {
     flex: 2;                 /* narrower than the left column */
-    /* border: 2px solid rgb(75, 70, 74); */
     padding: 20px;
     box-sizing: border-box;  /* include padding/border in width */
 }
@@ -66,15 +93,5 @@ nav ul {
 .photo-row {
     display: flex;           /* put images side-by-side */
     gap: 0;                  /* no horizontal gap so images touch */
-    margin-bottom: 10px;     /* vertical gap between top and bottom rows */
-}
-
-/* Taken from my Module 2 assignment */
-hr{
-  /* hr styling found on w3schools.com at https://www.w3schools.com/tags/tag_hr.asp */
-  margin-left: 0;
-  margin-right: auto;
-  border: none;
-  height: 10px;
-  background-color: rgb(161, 161, 161);
+    margin-bottom: 3px;     /* vertical gap between top and bottom rows */
 }
